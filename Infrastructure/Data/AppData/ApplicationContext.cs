@@ -13,6 +13,6 @@ namespace sprint_1.Infrastructure.Data.AppData
         public DbSet<ClienteEntity> Cliente { get; set; }
         public DbSet<EnderecoEntity> Endereco { get; set; }
         public DbSet<ProcedimentoEntity> Procedimento { get; set; }
-        public DbSet<RedeCredenciadaEntity> Agendamento { get; set; }
+        public DbSet<RedeCredenciadaEntity> RedeCredenciada { get; set; }
     }
 }

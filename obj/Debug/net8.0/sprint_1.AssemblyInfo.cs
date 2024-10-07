@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("sprint_1")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7bb962dcd6e10865728c4364136fb9b1ca56d1f5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9404adf331cb65cfe2217703f95c267fe418867f")]
 [assembly: System.Reflection.AssemblyProductAttribute("sprint_1")]
 [assembly: System.Reflection.AssemblyTitleAttribute("sprint_1")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

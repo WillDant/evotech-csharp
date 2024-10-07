@@ -26,9 +26,7 @@
 
   <ItemGroup>
     <Folder Include="Application\Dtos\" />
-    <Folder Include="Application\Interfaces\" />
     <Folder Include="Application\Services\" />
-    <Folder Include="Infrastructure\Data\Repository\" />
     <Folder Include="Presentation\Controller\" />
   </ItemGroup>
 

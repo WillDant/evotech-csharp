@@ -22,6 +22,15 @@ namespace sprint_1
             //Configurando Repositório Cliente no asp.net injeção de dependência
             builder.Services.AddTransient<IClienteRepository, ClienteRepository>();
 
+            //Configurando Repositório Endereco no asp.net injeção de dependência
+            builder.Services.AddTransient<IEnderecoRepository, EnderecoRepository>();
+
+            //Configurando Repositório Procedimento no asp.net injeção de dependência
+            builder.Services.AddTransient<IProcedimentoRepository, ProcedimentoRepository>();
+
+            // Configurando Repositório RedeCredenciada no asp.net injeção de dependência
+            builder.Services.AddTransient<IRedeCredenciadaRepository, RedeCredenciadaRepository>();
+
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();

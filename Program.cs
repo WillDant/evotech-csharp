@@ -49,9 +49,9 @@ namespace sprint_1
             {
                 c.SwaggerDoc("v1", new OpenApiInfo
                 {
-                    Title = "Api Cliente",
+                    Title = "Api Evotech OdontoPrev",
                     Version = "v1",
-                    Description = "API para cadastro de clientes"
+                    Description = "API para cadastro de clientes, endereços, Procedimentos e Redes Credenciadas"
                 });
                 c.EnableAnnotations(); // Habilitar anotações no Swagger
             });

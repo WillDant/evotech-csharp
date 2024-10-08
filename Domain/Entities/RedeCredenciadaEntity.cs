@@ -8,7 +8,7 @@ namespace sprint_1.Domain.Entities
     public class RedeCredenciadaEntity
     {
         [Key]
-        public string id_empresa { get; set; }
+        public int id_empresa { get; set; }
         public string cnpj { get; set; }
         public string dt_cadastro { get; set; }
         public string nm_empresa { get; set; }

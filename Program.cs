@@ -1,5 +1,8 @@
 
 using Microsoft.EntityFrameworkCore;
+using Microsoft.OpenApi.Models;
+using sprint_1.Application.Interfaces;
+using sprint_1.Application.Services;
 using sprint_1.Domain.Interfaces;
 using sprint_1.Infrastructure.Data.AppData;
 using sprint_1.Infrastructure.Data.Repository;
@@ -15,10 +18,11 @@ namespace sprint_1
             // Add services to the container.
 
             // Conexão com o banco de dados Oracle
-            builder.Services.AddDbContext<ApplicationContext>(options => {
-                
+            builder.Services.AddDbContext<ApplicationContext>(options =>
+            {
+
                 options.UseOracle("Data Source=(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=oracle.fiap.com.br)(PORT=1521))) (CONNECT_DATA=(SERVER=DEDICATED)(SID=ORCL)));User Id=<rm552671>;Password=<051204>;");
-        });
+            });
             //Configurando Repositório Cliente no asp.net injeção de dependência
             builder.Services.AddTransient<IClienteRepository, ClienteRepository>();
 
@@ -31,10 +35,26 @@ namespace sprint_1
             // Configurando Repositório RedeCredenciada no asp.net injeção de dependência
             builder.Services.AddTransient<IRedeCredenciadaRepository, RedeCredenciadaRepository>();
 
+            //Adicionando a interface e classe concreta no framework de injecão de dependencia
+            builder.Services.AddTransient<IClienteRepository, ClienteRepository>();
+            builder.Services.AddTransient<IClienteApplicationService, ClienteApplicationService>();
+
             builder.Services.AddControllers();
-            // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+
+
             builder.Services.AddEndpointsApiExplorer();
-            builder.Services.AddSwaggerGen();
+
+            //Configurando e habilitando a documentação no swagger 
+            builder.Services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new OpenApiInfo
+                {
+                    Title = "Api Cliente",
+                    Version = "v1",
+                    Description = "API para cadastro de clientes"
+                });
+                c.EnableAnnotations(); // Habilitar anotações no Swagger
+            });
 
             var app = builder.Build();
 
@@ -45,10 +65,7 @@ namespace sprint_1
                 app.UseSwaggerUI();
             }
 
-            app.UseHttpsRedirection();
-
             app.UseAuthorization();
-
 
             app.MapControllers();
 

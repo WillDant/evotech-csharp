@@ -8,7 +8,7 @@ namespace sprint_1.Domain.Entities
     public class EnderecoEntity
     {
         [Key]
-        public string id_end { get; set; }
+        public int id_end { get; set; }
         public string cep { get; set; }
         public string logradouro { get; set; }
         public string num_end { get; set; }

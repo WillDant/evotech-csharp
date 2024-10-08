@@ -8,7 +8,7 @@ namespace sprint_1.Domain.Entities
     public class ProcedimentoEntity
     {
         [Key]
-        public string id_proc { get; set; }
+        public int id_proc { get; set; }
         public string nm_proc  { get; set; }
         public  string tp_proc { get; set; }
         public float custo_medio { get; set; }

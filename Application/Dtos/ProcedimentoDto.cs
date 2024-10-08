@@ -5,7 +5,7 @@ namespace sprint_1.Application.Dtos
     public class ProcedimentoDto
     {
         [Required(ErrorMessage = "Campo ID do Procedimento é obrigatório.")]
-        public string id_proc { get; set; } = string.Empty;
+        public int id_proc { get; set; }
 
         [Required(ErrorMessage = "Campo Nome do Procedimento é obrigatório.")]
         [StringLength(150, MinimumLength = 3, ErrorMessage = "O campo Nome do Procedimento deve ter entre 3 e 150 caracteres.")]

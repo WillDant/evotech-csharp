@@ -1,1 +1,318 @@
-[]
+[
+  {
+    "ContainingType": "sprint_1.Presentation.Controller.ClienteController",
+    "Method": "Get",
+    "RelativePath": "api/Cliente",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sprint_1.Presentation.Controller.ClienteController",
+    "Method": "Post",
+    "RelativePath": "api/Cliente",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "entity",
+        "Type": "sprint_1.Application.Dtos.ClienteDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sprint_1.Presentation.Controller.ClienteController",
+    "Method": "ObterPorId",
+    "RelativePath": "api/Cliente/{id_clie}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id_clie",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sprint_1.Presentation.Controller.ClienteController",
+    "Method": "Put",
+    "RelativePath": "api/Cliente/{id_clie}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id_clie",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "entity",
+        "Type": "sprint_1.Application.Dtos.ClienteDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sprint_1.Presentation.Controller.ClienteController",
+    "Method": "Delete",
+    "RelativePath": "api/Cliente/{id_clie}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id_clie",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sprint_1.Presentation.Controller.EnderecoController",
+    "Method": "Get",
+    "RelativePath": "api/Endereco",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sprint_1.Presentation.Controller.EnderecoController",
+    "Method": "Post",
+    "RelativePath": "api/Endereco",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "entity",
+        "Type": "sprint_1.Application.Dtos.EnderecoDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sprint_1.Presentation.Controller.EnderecoController",
+    "Method": "ObterPorId",
+    "RelativePath": "api/Endereco/{id_end}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id_end",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sprint_1.Presentation.Controller.EnderecoController",
+    "Method": "Put",
+    "RelativePath": "api/Endereco/{id_end}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id_end",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "entity",
+        "Type": "sprint_1.Application.Dtos.EnderecoDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sprint_1.Presentation.Controller.EnderecoController",
+    "Method": "Delete",
+    "RelativePath": "api/Endereco/{id_end}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id_end",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sprint_1.Presentation.Controller.ProcedimentoController",
+    "Method": "Get",
+    "RelativePath": "api/Procedimento",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sprint_1.Presentation.Controller.ProcedimentoController",
+    "Method": "Post",
+    "RelativePath": "api/Procedimento",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "entity",
+        "Type": "sprint_1.Application.Dtos.ProcedimentoDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sprint_1.Presentation.Controller.ProcedimentoController",
+    "Method": "ObterPorId",
+    "RelativePath": "api/Procedimento/{id_proc}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id_proc",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sprint_1.Presentation.Controller.ProcedimentoController",
+    "Method": "Put",
+    "RelativePath": "api/Procedimento/{id_proc}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id_proc",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "entity",
+        "Type": "sprint_1.Application.Dtos.ProcedimentoDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sprint_1.Presentation.Controller.ProcedimentoController",
+    "Method": "Delete",
+    "RelativePath": "api/Procedimento/{id_proc}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id_proc",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sprint_1.Presentation.Controller.RedeCredenciadaController",
+    "Method": "Get",
+    "RelativePath": "api/RedeCredenciada",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sprint_1.Presentation.Controller.RedeCredenciadaController",
+    "Method": "Post",
+    "RelativePath": "api/RedeCredenciada",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "entity",
+        "Type": "sprint_1.Application.Dtos.RedeCredenciadaDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sprint_1.Presentation.Controller.RedeCredenciadaController",
+    "Method": "ObterPorId",
+    "RelativePath": "api/RedeCredenciada/{id_empresa}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id_empresa",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sprint_1.Presentation.Controller.RedeCredenciadaController",
+    "Method": "Put",
+    "RelativePath": "api/RedeCredenciada/{id_empresa}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id_empresa",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "entity",
+        "Type": "sprint_1.Application.Dtos.RedeCredenciadaDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sprint_1.Presentation.Controller.RedeCredenciadaController",
+    "Method": "Delete",
+    "RelativePath": "api/RedeCredenciada/{id_empresa}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id_empresa",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

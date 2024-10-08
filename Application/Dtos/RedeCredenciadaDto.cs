@@ -5,7 +5,7 @@ namespace sprint_1.Application.Dtos
     public class RedeCredenciadaDto
     {
         [Required(ErrorMessage = "Campo ID da Empresa é obrigatório.")]
-        public string id_empresa { get; set; } = string.Empty;
+        public int id_empresa { get; set; }
 
         [Required(ErrorMessage = "Campo CNPJ é obrigatório.")]
         [RegularExpression(@"\d{2}\.\d{3}\.\d{3}/\d{4}-\d{2}", ErrorMessage = "CNPJ deve estar no formato XX.XXX.XXX/XXXX-XX.")]
@@ -20,7 +20,7 @@ namespace sprint_1.Application.Dtos
 
         [Required(ErrorMessage = "Campo Especialidade é obrigatório.")]
         [StringLength(100, ErrorMessage = "O campo Especialidade deve ter no máximo 100 caracteres.")]
-        public string epecialidade { get; set; } = string.Empty;
+        public string especialidade { get; set; } = string.Empty;
 
         [Required(ErrorMessage = "Campo Telefone é obrigatório.")]
         [StringLength(15, ErrorMessage = "O campo Telefone deve ter no máximo 15 caracteres.")]
